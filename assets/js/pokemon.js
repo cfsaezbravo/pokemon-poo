@@ -25,4 +25,4 @@ var Charmander = new Pokemon("Charmander", "rojo", 300,100);
 
 Pikachu.atacar(Charmander);
 
-document.write(Charmander.vida);
+console.log(Charmander.vida);
