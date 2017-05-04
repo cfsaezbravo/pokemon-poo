@@ -20,18 +20,18 @@ function Pokemon(nombre,color,vida,poderDeAtaque){
 	}
 }
 
-var Pikachu = new Pokemon("Pikachu","amarillo",200,50);
-var Charmander = new Pokemon("Charmander", "rojo", 300,100);
-
-var pokemon1 = document.getElementById("Pokemon1");
-var pokemon2 = document.getElementById("Pokemon2");
-
-var poke1 = pokemon1.options[pokemon1.selectedIndex].class;
-var poke2 = pokemon2.options[pokemon2.selectedIndex].class;
-
 function pelea(poke1, poke2){
-	alert("Hola");
+	var llamarPokemon1 = document.getElementById("Pokemon1").value;
+	var llamarPokemon2 = document.getElementById("Pokemon2").value;
+
+	var pokemon1 = new Pokemon(llamarPokemon1, "amarillo", 100, 20);
+	var pokemon2 = new Pokemon(llamarPokemon2, "rojo", 200, 40);
+
+	pokemon1.atacar(pokemon2);
+
+	var pelea = document.getElementsByClassName("pokemones");
+
+	alert(pokemon1.nombre + " atacó a " + pokemon2.nombre + ". El nivel de vida de " + pokemon2.nombre + " quedó en: " + pokemon2.vida);
 }
 
-Pikachu.atacar(Charmander);
-console.log("Nueva vida " + Charmander.vida);
+
