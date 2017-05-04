@@ -8,20 +8,23 @@
 
 	<h1><center>Batalla Pokemon</center></h1>
 
-	<div>
-		<select>
-			<option value="pokemon">Pikachu</option>
-			<option value="pokemon">Charmander</option>
+	<div class = "">
+		<select id = "Pokemon1">
+			<option value = 0 selected="">Selecciona Pokemon</option>
+			<option class = "Pikachu" value="pokemon">Pikachu</option>
+			<option class = "Charmander" value="pokemon">Charmander</option>
 		</select>
-		<select>
-			<option value="pokemon">Charmander</option>
-			<option value="pokemon">Pikachu</option>
+		<select id = "Pokemon2">
+			<option value = 0 selected="">Selecciona Pokemon</option>
+			<option class = "Pikachu" value="pokemon">Charmander</option>
+			<option class = "Charmander" value="pokemon">Pikachu</option>
 		</select>
 	</div>
 
-	<div>
-		<button id="botoncito" onclick="Pokemon()">Pelea</button>
+	<div class = "">
+		<button id="botoncito" onclick="pelea()">Pelea</button>
 	</div>
+
 	<script src = "assets/js/pokemon.js"></script>
 </body>
 </html>
