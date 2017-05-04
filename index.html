@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Batalla Pokemon</title>
+	<link rel=“stylesheet” type=“text/css” href=“assets/css/main.css”>
 </head>
 <body>
 
 	<h1><center>Batalla Pokemon</center></h1>
+	<p>Elige los pokemon que quieres que batallen: </p>
 
 	<div class = "pokemones">
 		<select id = "Pokemon1">
@@ -16,6 +18,7 @@
 			<option value = "Squirtle">Squirtle</option>
 			<option value = "Bulbasaur">Bulbasaur</option>
 		</select>
+		
 		<select id = "Pokemon2">
 			<option value = 0 selected="">Selecciona Pokemon</option>
 			<option value = "Pikachu">Pikachu</option>
@@ -26,7 +29,7 @@
 	</div>
 
 	<div class = "">
-		<button id="botoncito" onclick="pelea()">Pelea</button>
+		<button id="botoncito" onclick="pelea()">Batalla</button>
 	</div>
 
 	<script src = "assets/js/pokemon.js"></script>

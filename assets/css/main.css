@@ -1,0 +1,6 @@
+.pokemones select {
+	width: 240px;
+  	height: 34px;
+  	overflow: hidden;
+  	border: 1px solid #ccc;
+}
